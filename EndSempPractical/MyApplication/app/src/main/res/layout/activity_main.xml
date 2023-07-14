@@ -14,19 +14,36 @@
         android:hint="enter the value"
         android:id="@+id/e1"
         android:layout_height="wrap_content"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_marginTop="30dp"
-        android:textSize="50dp"
-        android:layout_height="wrap_content"
-        android:hint="Output"
-        android:id="@+id/t1"
-        />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/b1"
         android:text="Generate"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:id="@+id/t1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:id="@+id/t2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:hint="Completed"
+        android:id="@+id/t3"
+        />
+
 
 
 </LinearLayout>

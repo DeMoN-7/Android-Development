@@ -23,7 +23,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
-TextView t1;
+TextView t1,t2,t3;
 EditText e1;
 //    int x=1;
 Button b1;
@@ -33,6 +33,8 @@ Button b1;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         t1=findViewById(R.id.t1);
+        t2=findViewById(R.id.t2);
+        t3=findViewById(R.id.t3);
         b1=findViewById(R.id.b1);
         e1=findViewById(R.id.e1);
         requestQueue = Volley.newRequestQueue(this);
@@ -48,6 +50,8 @@ Button b1;
                     public void onResponse(JSONObject response) {
                         try {
                             t1.setText(" "+ response.getString("title"));
+                            t2.setText(" "+ response.getString("id"));
+                            t3.setText(" "+ response.getString("completed"));
                         } catch (JSONException e) {
                             throw new RuntimeException(e);
                         }
